@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+folderList=`cat codeSubject | awk -F , '{print $1}'`
+for f in $folderList;
+do
+	mkdir $f
+done
+
